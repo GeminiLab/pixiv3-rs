@@ -3,6 +3,9 @@
 //! All types use Serde for JSON (de)serialization. Pixiv API returns snake_case;
 //! only `WebviewNovel` uses camelCase (from HTML embedding).
 
+// we consider fields in these structs self-descriptive enough
+#![allow(missing_docs)]
+
 use chrono::{DateTime, FixedOffset};
 use reqwest::StatusCode;
 use serde::{Deserialize, Serialize, de::DeserializeOwned};

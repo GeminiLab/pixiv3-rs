@@ -43,13 +43,26 @@ pub const TOKEN_REFRESH_SAFE_MARGIN: u64 = 300;
 ///
 /// Token 管理器：无认证、仅 access token、或带自动刷新的 refresh token。
 pub enum TokenManager {
+    /// No auth provided.
+    ///
+    /// 无认证。
     NoAuth,
+    /// Access token provided.
+    ///
+    /// 提供 access token。
     AccessToken {
+        /// The access token.
         access_token: String,
     },
+    /// Refresh token provided.
+    ///
+    /// 提供 refresh token，带自动刷新。
     RefreshToken {
+        /// The refresh token.
         refresh_token: String,
+        /// The current access token and its expiration time.
         access_token_and_expires_at: ArcSwapOption<(String, DateTime<Utc>)>,
+        /// The lock for update.
         update_lock: AsyncMutex<()>,
     },
 }

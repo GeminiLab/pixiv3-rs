@@ -22,8 +22,11 @@ use crate::token_manager::TokenManager;
 #[derive(Copy, Clone, Debug)]
 #[non_exhaustive]
 pub enum HttpMethod {
+    /// GET.
     GET,
+    /// POST.
     POST,
+    /// DELETE.
     DELETE,
 }
 

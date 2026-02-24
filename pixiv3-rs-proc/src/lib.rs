@@ -336,9 +336,14 @@ pub fn api_endpoints(input: TokenStream) -> TokenStream {
                 .next_url
                 .clone()
                 .unwrap_or_else(|| format_ident!("next_url"));
+            let iter_doc_comment = format!(
+                "Iterate over the results of {0}.\n\n{0}的迭代版本。",
+                stringify!(#name)
+            );
 
             let iter_fn = quote! {
                 #[allow(clippy::too_many_arguments)]
+                #[doc = #iter_doc_comment]
                 pub fn #iter_fn_name<'a0 #(, #lifetimes)*>(
                     &'a0 self,
                     #(#fn_params)*

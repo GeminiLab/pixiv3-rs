@@ -1,5 +1,8 @@
 //! API parameter enums (filter, restrict, sort, etc.).
 
+// we consider fields in these structs self-descriptive enough
+#![allow(missing_docs)]
+
 use kv_pairs::impl_into_value_by_into_str_ref;
 use strum::IntoStaticStr;
 
