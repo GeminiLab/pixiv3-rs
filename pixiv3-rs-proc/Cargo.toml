@@ -1,0 +1,28 @@
+[package]
+name = "pixiv3-rs-proc"
+version = "0.1.0"
+authors = ["aarkegz <aarkegz@gmail.com>"]
+edition = "2024"
+categories = ["development-tools::procedural-macros", "api-bindings"]
+description = "Procedural macros for pixiv3-rs API endpoint code generation"
+documentation = "https://docs.rs/pixiv3-rs-proc"
+homepage = "https://github.com/GeminiLab/pixiv3-rs"
+keywords = ["pixiv", "api", "proc-macro", "code-generation"]
+license = "Unlicense"
+readme = "README.md"
+repository = "https://github.com/GeminiLab/pixiv3-rs"
+rust-version = "1.85"
+
+include = ["src/", "README.md", "LICENSE"]
+
+[lib]
+proc-macro = true
+
+[features]
+default = ["stream"]
+stream = []
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "2.0", features = ["full", "fold"] }
