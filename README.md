@@ -64,6 +64,6 @@ This library is a port of [upbit/pixivpy](https://github.com/upbit/pixivpy), wit
 
 ## License
 
-[Unlicense](LICENSE), same as [upbit/pixivpy](https://github.com/upbit/pixivpy). And I quote its words here:
+[Unlicense](./LICENSE), same as [upbit/pixivpy](https://github.com/upbit/pixivpy). And I quote its words here:
 
 > Feel free to use, reuse and abuse the code in this project.

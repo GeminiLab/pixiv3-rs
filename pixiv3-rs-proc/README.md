@@ -13,4 +13,4 @@ See [pixiv3-rs](https://github.com/GeminiLab/pixiv3-rs) for usage and documentat
 
 ## License
 
-[Unlicense](LICENSE).
+[Unlicense](./LICENSE).
