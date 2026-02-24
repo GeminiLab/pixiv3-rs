@@ -1,5 +1,10 @@
 # pixiv3-rs
 
+[![Crates.io](https://img.shields.io/crates/v/pixiv3-rs)](https://crates.io/crates/pixiv3-rs)
+[![docs.rs](https://img.shields.io/docsrs/pixiv3-rs)](https://docs.rs/pixiv3-rs)
+[![License: MIT](https://img.shields.io/crates/l/pixiv3-rs)](LICENSE)
+[![CI](https://github.com/GeminiLab/pixiv3-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/GeminiLab/pixiv3-rs/actions/workflows/ci.yml)
+
 Rust client for the [Pixiv App API](https://www.pixiv.net/) (app-api.pixiv.net). Port of the Python library [pixivpy3](https://github.com/upbit/pixivpy), with a similar public API, and an updated asynchronous structure.
 
 ## Usage
